@@ -13,11 +13,12 @@ int main(void)
 {
 int r;
 for (r = 0 ; r < 10 ; r++)
-{	putchar(r + '0');
-	if (r != 9)
+{	if
+	(EOF != NULL)
+		putchar(r + '0');
 		putchar(',');
 		putchar(' ');
-	else if (r == 9)
+	else
 		putchar('$');
 }
 return (0);
