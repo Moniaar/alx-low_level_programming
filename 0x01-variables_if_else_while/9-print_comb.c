@@ -13,9 +13,9 @@ int main(void)
 {
 int r;
 for (r = 0 ; r < 10 ; r++)
-{	if
-	(EOF != NULL)
-		putchar(r + '0');
+{	putchar(r + '0');
+	if
+	(r != 9)
 		putchar(',');
 		putchar(' ');
 	else
