@@ -1,3 +1,1 @@
-my first readme file for my C projects
-# alx-low_level_programming
-# alx-low_level_programming
+Our first readme fil in C programming language
