@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * main Entry - point
+ * main - Entry point
  *
- * Description: Using if to test a random number value
+ * Description: false or true checker
  *
  * Return: Always 0 (success)
 */
