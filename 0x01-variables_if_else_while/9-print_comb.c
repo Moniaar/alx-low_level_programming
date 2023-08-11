@@ -15,7 +15,7 @@ int r;
 for (r = 0 ; r <= 10 ; r++)
 {	putchar(r + '0');
 	putchar(',');
-	putchar('NULL');
+	putchar(' ');
 }
 return (0);
 }
