@@ -14,8 +14,8 @@ int main(void)
 int r;
 for (r = 0 ; r < 10 ; r++)
 {	putchar(r + '0');
-	putchar(',');
 	if (r != 9)
+		putchar(',');
 		putchar(' ');
 	else if (r == 9)
 		putchar('$');
