@@ -16,7 +16,7 @@ for (r = 0 ; r <= 9 ; r++)
 {
 	putchar(r + '0');
 }
-for (r = 10 ; r <= 15 ; r++)
+for (r = 97 ; r <= 102 ; r++)
 {
 	putchar(r);
 }
