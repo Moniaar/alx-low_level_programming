@@ -15,7 +15,10 @@ int r;
 for (r = 0 ; r < 10 ; r++)
 {	putchar(r + '0');
 	putchar(',');
-	putchar(' ');
+	if (r != 9)
+		putchar(' ');
+	else if (r == 9)
+		putchar('$');
 }
 return (0);
 }
