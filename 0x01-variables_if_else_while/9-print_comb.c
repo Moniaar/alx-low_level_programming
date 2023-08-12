@@ -11,14 +11,16 @@
 
 int main(void)
 {
-int r;
-for (r = 0 ; r < 10 ; r++)
+int r = 0;
+if (r < 10)
 {	putchar(r + '0');
-	if (r != 9)
-		putchar(',');
-		putchar(' ');
+	putchar(',');
+	putchar(' ');
 }
-putchar('$');
+else if (r == 9)
+{	putchar(r + '$');
+}
+i++;
 return (0);
 }
 
