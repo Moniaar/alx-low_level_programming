@@ -20,7 +20,7 @@ for (r = 0; r < 10; r++)
 		putchar(' ');
 	}
 }
-putchar('\n')
+putchar('\n');
 return (0);
 }
 
