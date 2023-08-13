@@ -5,7 +5,7 @@
  *
  * Description: We will use the function sizeOf in
  * this program to know the size of every type we can configure
- * 
+ *
  * Return: Always 0 (Success)
 */
 
