@@ -12,15 +12,15 @@
 int main(void)
 {
 int r = 0;
-if (r < 10)
+for (r = 0; r < 10; r++)
 {	putchar(r + '0');
-	putchar(',');
-	putchar(' ');
+	if (r != 9)
+	{
+		putchar(',');
+		putchar(' ');
+	}
 }
-else if (r == 9)
-{	putchar(r + '$');
-}
-i++;
+putchar('\n')
 return (0);
 }
 
