@@ -22,9 +22,6 @@ int print_sign(int n)
 		return (-1);
 	}
 	else if
-		{
 		_putchar(48);
 		return (0);
-		}
 }
-
