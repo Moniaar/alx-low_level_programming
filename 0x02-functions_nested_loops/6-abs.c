@@ -5,7 +5,7 @@
  *
  * @n: input number
  *
- * Return: Always n (Success)
+ * Return: Always 0 (Success)
 */
 
 int _abs(int n)
