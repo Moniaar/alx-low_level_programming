@@ -10,7 +10,7 @@ void print_alphabet(void)
 {
 	char r = 97;
 
-	while (r >= 97 || r <= 122)
+	while (r >= 97 && r <= 122)
 	{
 		_putchar(r);
 		r++;
