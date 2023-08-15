@@ -13,7 +13,7 @@ int _islower(int c)
 {
 	char c = 97;
 
-	if (r >= 97 && r <= 122)
+	if (c >= 97 && c <= 122)
 		return (1);
 	else if
 		return (0);
