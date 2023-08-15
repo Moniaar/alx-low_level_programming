@@ -10,7 +10,7 @@
  * 0 if it's not
 */
 
-int _isalpha(int c);
+int _isalpha(int c)
 {
 	char c = 97;
 
