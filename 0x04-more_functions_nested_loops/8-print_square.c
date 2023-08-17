@@ -10,15 +10,13 @@
  * @size: input size of the square
  *
  * Return: Always 0 (Success)
-*/
+ */
 
 void print_square(int size)
 {
 	int n;
 
 	int j;
-
-	size = n * j;
 
 	if (size <= 0)
 	{
@@ -29,8 +27,12 @@ void print_square(int size)
 		{
 			for (j = 1; j <= size; j++)
 			{
-				_putchar(35);
+				if ( (n * j) <= size)
+					_putchar(" ");
+				else
+					_putchar("#");
 			}
+			_putchar("\n");
 		}
 	return (0);
 }
