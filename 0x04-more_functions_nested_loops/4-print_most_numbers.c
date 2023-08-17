@@ -18,11 +18,10 @@ void print_most_numbers(void)
 	while (x < 10)
 	{
 		_putchar(x + 48);
-		if ( x != 2 && x != 4)
-		{
-			_putchar('\n');
-		}
-	x++;
+		if ( x == 2 || x == 4)
+			continue;
+		x++;
 	}
+	_putchar('\n');
 	return (0);
 }
