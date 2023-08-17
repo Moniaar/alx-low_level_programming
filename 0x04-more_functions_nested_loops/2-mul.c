@@ -11,18 +11,13 @@
  *
  * @b: input
  *
- * Return: Always 0 (Success)
+ * Return: Multiple of 2 Numbers
 */
 
 int mul(int a, int b)
 {
-	int a;
-
-	int b;
-
 	int multip;
 
 	multip = a * b;
-		_putchar(multip + '0');
 	return (multip);
 }
