@@ -1,1 +1,1 @@
-My readme file for our loops and variables lesson
+My Readme file for practising more loop projects
