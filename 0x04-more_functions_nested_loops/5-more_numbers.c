@@ -13,18 +13,20 @@
 
 void more_numbers(void)
 {
-	int x;
+	int n, r, c;
 
-	int u;
-
-	for (x = 1; x <= 10; x++)
+	for (r = 1; r <= 10; r++)
 	{
-		for (u = 0; u <= 14; u++)
+		for (c = 0; c <= 14; c++)
 		{
-			_puctchar(u + '0');
-			_putchar('\n');
+			n = c;
+			if (c > 9)
+			{
+				_puctchar(1 + '0');
+				n = c % 10;
+			}
+			_putchar(n + '0');
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
