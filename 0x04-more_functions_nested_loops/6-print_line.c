@@ -15,17 +15,16 @@
 
 void print_line(int n)
 {
-	int n = 1;
+	int chin;
 
-	while (n > 0)
+	if (n <= 0)
 	{
-		if (n <= 0)
-		{
-			_putchar('\n');
-		}
-		else
-			_putchar('_');
-	n++;
+		_putchar('\n');
 	}
-	return (0);
+	else
+	{
+		for (chin = 1 ; chin <= n ; chin++)
+			_putchar('_');
+		_pucthar('\n');
+	}
 }
