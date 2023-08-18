@@ -9,7 +9,7 @@
  * to 14 ten times
  *
  * Return: Always 0 (Success)
-*/
+ */
 
 void more_numbers(void)
 {
