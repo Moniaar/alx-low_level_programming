@@ -11,22 +11,27 @@
  * @n: input number of times the character \ should be printed
  *
  * Return: Always 0 (Success)
-*/
+ */
 
 void print_diagonal(int n)
 {
-	int n;
+	int ui, sp;
 
-	for (int u = 0; u < n; u++)
+	if (n <= 0)
 	{
-		for (int p = 0; p < n; p++)
-		{
-			if (p == u)
-				_putchar(92);
-			else
-				_putchar('\n');
-		}
 		_putchar('\n');
 	}
-	return (0);
+	else
+		for (int ui = 1 ; ui <= n ; ui++)
+		{
+			for (int sp = 1 ; sp <= ui ; sp++)
+			{
+				_putchar(' ');
+			}
+			_putchar(92);
+			_putchar('\n');
+		}
+	_putchar('\n');
+}
+return (0);
 }

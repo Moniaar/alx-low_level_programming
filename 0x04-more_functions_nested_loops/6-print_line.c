@@ -8,7 +8,7 @@
  * Description: a that will give you a straight
  * line if it's biggers than 0
  *
- * @n: input character
+ * @n: integr
  *
  * Return: Always 0 (Success)
 */
