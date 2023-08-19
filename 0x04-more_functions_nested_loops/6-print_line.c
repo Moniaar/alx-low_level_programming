@@ -25,6 +25,6 @@ void print_line(int n)
 	{
 		for (chin = 1 ; chin <= n ; chin++)
 			_putchar('_');
-		_pucthar('\n');
+		_putchar('\n');
 	}
 }
