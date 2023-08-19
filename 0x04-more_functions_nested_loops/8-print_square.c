@@ -20,7 +20,9 @@ void print_square(int size)
 	if (size <= 0)
 		_putchar('\n');
 	else
-	{	for (n = 1; n <= size; n++)
+
+	{
+		for (n = 1; n <= size; n++)
 		{
 			for (j = 1; j <= size; j++)
 			{
