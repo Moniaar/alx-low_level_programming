@@ -22,9 +22,9 @@ void print_diagonal(int n)
 		_putchar('\n');
 	}
 	else
-		for (int ui = 1 ; ui <= n ; ui++)
+		for (ui = 1 ; ui <= n ; ui++)
 		{
-			for (int sp = 1 ; sp <= ui ; sp++)
+			for (sp = 1 ; sp <= ui ; sp++)
 			{
 				_putchar(' ');
 			}
@@ -32,6 +32,5 @@ void print_diagonal(int n)
 			_putchar('\n');
 		}
 	_putchar('\n');
-}
-return (0);
+	return (0);
 }
