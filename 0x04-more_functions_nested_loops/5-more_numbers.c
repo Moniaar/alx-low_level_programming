@@ -22,7 +22,7 @@ void more_numbers(void)
 			n = c;
 			if (c > 9)
 			{
-				_puctchar(1 + '0');
+				_putchar(1 + '0');
 				n = c % 10;
 			}
 			_putchar(n + '0');
