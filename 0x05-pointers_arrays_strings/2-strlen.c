@@ -15,7 +15,7 @@ int _strlen(char *s)
 
 	for (cnu = 0 ; *s != EOF ; *s++)
 	{
-		cnu++
+		cnu++;
 	}
 	return (cnu);
 }
