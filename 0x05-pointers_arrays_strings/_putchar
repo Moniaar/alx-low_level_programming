@@ -1,0 +1,17 @@
+#include <unisted.h>
+#include "math.h"
+
+/**
+ * _putchar - a function that will display info
+ * to stdout
+ *
+ * @c: the character to display
+ *
+ * Return: On success 1.
+ * on error -1 .
+ *
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
