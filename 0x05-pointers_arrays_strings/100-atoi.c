@@ -22,7 +22,6 @@ int _atoi(char *s)
 			signof *= -1;
 		else if (*s >= '0' && *s <= '9')
 			No = (No * 10) + (*s - '0');
-			_putchar(No + '0');
 	}
 	return (No * signof);
 }
