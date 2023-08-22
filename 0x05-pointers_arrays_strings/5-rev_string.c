@@ -15,6 +15,8 @@ void rev_string(char *s)
 	char k;
 
 	for (y = 0 ; s[y] != '\0' ; y++)
+		;
+/*Going back on the string using counter*/
 		for (j = 0 ; j < y / 2 ; j++)
 		{
 			k = s[j];
