@@ -16,7 +16,7 @@ int _atoi(char *s)
 
 	while (*s++)
 	{
-		if (No < 0)
+		if (No > 0)
 			break;
 		else if (*s == '-')
 			signof *= -1;
