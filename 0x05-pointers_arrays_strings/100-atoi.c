@@ -23,5 +23,5 @@ int _atoi(char *s)
 		else if (*s >= '0' && *s <= '9')
 			No = (No * 10) + (*s - '0');
 	}
-	return (No * sign);
+	return (No * signof);
 }
