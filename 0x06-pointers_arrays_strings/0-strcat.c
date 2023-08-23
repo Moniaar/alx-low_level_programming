@@ -4,9 +4,9 @@
 /**
  * *_strcat -  a function that concatenates two strings
  *
- * @dest: input string
- *
  * @src: input string
+ *
+ * @dest: input string
  *
  * Return: a pointer to the resulting string dest
  */
