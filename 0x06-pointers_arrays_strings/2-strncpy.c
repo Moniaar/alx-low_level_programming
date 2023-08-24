@@ -8,7 +8,7 @@
  *
  *@dest: input string
  *
- *@scr: input string
+ *@src: input string
  *
  * Return: character
  */
