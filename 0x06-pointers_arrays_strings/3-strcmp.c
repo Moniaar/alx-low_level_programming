@@ -13,18 +13,17 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	char s1[];
-	char s2[];
-	int n;
+	int n, u = 0;
 
-	while (n > 0)
+	while (strlen(s1) == strlen(s2))
 	{
-		if (s1[] < s2[])
-			return (n);
-		else if (s1[] < s2[])
-			return (-n);
-		else if (s1[] == s2[])
-			return (0);
+		for (n = 0 ; s2[n] ; n++)
+		{
+			if (s1[n] == s2[n])
+			u++;
+		}
+		if (n == u)
+			return (1);
 	}
 	return (n);
 }
