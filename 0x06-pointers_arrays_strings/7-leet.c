@@ -4,23 +4,24 @@
 /**
  * *leet -  a function that encodes a string into 1337
  *
- *@*: pointer input
+ *@cp: pointer input
  *
  * Return: character
  */
 
-char *leet(char *)
+char *leet(char *cp)
 {
 	char *r = cp;
-	char str[] = ['A' , 'E' , 'O' , 'T' , 'L'];
-	int num[] = [4 , 3 , 0 , 7 , 1];
+	char str[] = ['A', 'E', 'O', 'T', 'L'];
+	int num[] = [4, 3, 0, 7, 1];
+	unsigned int i;
 
-	while (*c)
+	while (*cp)
 	{
 		for (i = 0 ; i < sizeof(str) / sizeof(char) ; i++)
 		{
-			if (c* == str[i] || c* == str[i] + 48)
-				c* = 48 + num[i];
+			if (*cp == str[i] || *cp == str[i] + 48)
+				*cp = 48 + num[i];
 		}
 		cp++;
 	}

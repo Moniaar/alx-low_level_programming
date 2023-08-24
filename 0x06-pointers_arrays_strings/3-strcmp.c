@@ -8,23 +8,22 @@
  *
  * @s2: input string
  *
- * @n: input number of characters inside the strings
  * Return: integer
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	char str1[];
-	char str2[];
+	char s1[];
+	char s2[];
 	int n;
 
 	while (n > 0)
 	{
-		if (str1[] < str2[])
+		if (s1[] < s2[])
 			return (n);
-		else if (str1[] < str2[])
+		else if (s1[] < s2[])
 			return (-n);
-		else if (str1[] == str2[])
+		else if (s1[] == s2[])
 			return (0);
 	}
 	return (n);
