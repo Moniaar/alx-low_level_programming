@@ -14,10 +14,10 @@ char *string_toupper(char *st)
 {
 	int u;
 
-	for (i = 0; st[i] != '\0'; i++)
+	for (u = 0; st[u] != '\0'; u++)
 	{
-		if (st[i] >= 90 && st[i] <= 122)
-			st[i] = st[i] - 32;
+		if (st[u] >= 97 && st[u] <= 122)
+			st[u] = st[u] - 32;
 	}
 
 	return (st);
