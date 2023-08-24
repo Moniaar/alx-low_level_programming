@@ -1,14 +1,14 @@
 #include <stdio.h>
-#include "math.h"
+#include "main.h"
 
 /**
  * *_strncpy - a function that copies a string.
  *
- * @n: input character
+ *@n: input character
  *
- * @dest: input string
+ *@dest: input string
  *
- * @scr: input string
+ *@scr: input string
  *
  * Return: character
  */
