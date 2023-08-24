@@ -27,4 +27,5 @@ int _strcmp(char *s1, char *s2)
 		else if (str1[] == str2[])
 			return (0);
 	}
+	return (n);
 }
