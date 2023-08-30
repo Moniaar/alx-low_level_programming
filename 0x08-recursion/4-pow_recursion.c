@@ -14,18 +14,14 @@
 
 int _pow_recursion(int x, int y)
 {
-	int val;
-
-	val = 1;
-
 	if (y < 0)
-	{
 		return (-1);
+		break;
 	else if (y == 0)
 		return (1);
+		break;
 	else
-		val *= x;
-	--y;
-	}
+		y *= x;
+		--y;
 	return (_pow_recursion(x, y));
 }
