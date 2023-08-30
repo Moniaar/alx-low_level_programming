@@ -19,11 +19,13 @@ int _pow_recursion(int x, int y)
 	val = 1;
 
 	if (y < 0)
+	{
 		return (-1);
 	else if (y == 0)
 		return (1);
 	else
 		val *= x;
-		--y;
+	--y;
+	}
 	return (_pow_recursion(x, y));
 }
