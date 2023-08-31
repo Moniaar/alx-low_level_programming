@@ -6,8 +6,8 @@
  *
  * @s: string of char
  *
- * Retrun: length of the string as an integer
- */ 
+ * Return: length of the string as an integer
+ */
 
 int _strlen_recursion(char *s)
 {
@@ -16,5 +16,5 @@ int _strlen_recursion(char *s)
 		return (0);
 	}
 	else
-		return (1 + _strlen_recursion(s+1));
+		return (1 + _strlen_recursion(s + 1));
 }
