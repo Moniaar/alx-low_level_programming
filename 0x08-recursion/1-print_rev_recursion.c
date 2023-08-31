@@ -11,12 +11,9 @@
 
 void _print_rev_recursion(char *s)
 {
-	int p;
-	char srev[];
-
-	for ( ; srev[] != '\0' ; p--)
+	if (*s != '\0')
 	{
-		_putchar(srev[]);
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
 	}
-
 }

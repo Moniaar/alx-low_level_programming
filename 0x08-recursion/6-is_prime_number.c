@@ -12,9 +12,11 @@
 
 int is_prime_number(int n)
 {
-	if (n % 2 != 0)
+	int fact;
+
+	fact = factorial(n - 1);
+	if (fact % n == n - 1)
 		return (1);
 	else
 		return (0);
-	return (n);
 }
