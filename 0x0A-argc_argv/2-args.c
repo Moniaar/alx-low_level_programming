@@ -1,6 +1,5 @@
 #include<stdio.h>
 
-
 /**
  * main - a program that prints all arguments it receives.
  *
@@ -17,7 +16,7 @@ int main(int argc, char const *argv[])
 
 	while (argc--)
 	{
-		printf("%s\n", arg[u]);
+		printf("%s\n", argv[u]);
 		u++;
 	}
 	return (0);
