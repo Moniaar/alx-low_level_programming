@@ -13,10 +13,10 @@
 
 int _sqrt_recursion(int n)
 {
-	long int k;
+	int k;
 
 	if (n < 0)
 		return (-1);
-	k = n * n;
-	return (k);
+	k = n ^ 0.5;
+		return (k);
 }
