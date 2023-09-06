@@ -16,12 +16,13 @@ char *_strdup(char *str)
 {
 	char *u;
 	char r;
-	int i, n = 7;
+	int i;
+	int n = 1;
 
-	u = malloc(n * sizeof(char));
+	u = (*char)malloc(sizeof(char) * n);
 	if (str == NULL || u == NULL)
 		return (NULL);
-	for (i = 0 ; str[i] != '\0' ; i++)
+	for (i = 0 ; i < n ; i++)
 	{
 		r = *(u + i);
 		_putchar(r);
