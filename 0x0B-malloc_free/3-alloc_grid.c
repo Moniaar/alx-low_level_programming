@@ -18,18 +18,24 @@ int **alloc_grid(int width, int height)
 	int **parr;
 	int i, j;
 
+	parr = malloc(sizeof(int) * height);
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	parr = malloc(sizeof(int) * width);
 
 	if (parr == NULL)
 		return (NULL);
-	for (i = 0 ; i < width ; i++)
+	for (i = 0 ; i < height ; i++)
 	{
-		j = 0;
-		parr = malloc(sizeof(int) * height);
-			parr[i][j] = 0;
+		parr[i] = malloc(sizeof(int) * width);
+			if (parr[i] == 0)
+			{
+				while (i--)
+					free(parr[i]);
+				free(parr);
+				return (NULL);
+			}
+			for (j = 0 ; j < width ; j++)
+				parr[i][j] = 0;
 	}
-	free (parr);
 	return (parr);
 }
