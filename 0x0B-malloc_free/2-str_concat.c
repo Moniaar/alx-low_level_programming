@@ -13,8 +13,8 @@ int _strlen11(char *d)
 {
 	int si = 0;
 
-	for ( ; d(si) != '\0' ; si++)
-	;
+	while (d[si] != '\0')
+		si++;
 	return (si);
 }
 
@@ -50,11 +50,11 @@ char *str_concat(char *s1, char *s2)
 
 	while (n <= size1 + size2)
 	{
-		n++;
 		if (n < size1)
 			y[n] = s1[n];
 		else
-			y[n] = s1[n - size1];
+			y[n] = s2[n - size1];
+		n++;
 	}
 	y[n] = '\0';
 	return (y);
