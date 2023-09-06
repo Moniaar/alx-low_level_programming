@@ -1,4 +1,5 @@
 #include "main.h"
+#include<stdlib.h>
 
 /**
  * _strdup - a function that returns a pointer to a
@@ -13,5 +14,17 @@
 
 char *_strdup(char *str)
 {
+	char *u;
+	char r;
+	int i, n = 7;
 
+	if (str == NULL || u == NULL)
+		return (NULL);
+	u = malloc(7 * sizeof(char));
+	for (i = 0 ; str[i] != '\0' ; i++)
+	{
+		r = *(u + i);
+		_putchar(r);
+	}
+	return (u);
 }
