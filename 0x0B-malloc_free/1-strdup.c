@@ -22,11 +22,11 @@ char *_strdup(char *str)
 		return (NULL);
 	while (str[n] != '\0')
 		n++;
-	u = malloc(sizeof(*str));
+	u = malloc(n * sizeof(*str) + 1);
 
 	if (u == 0)
 		return (NULL);
-	for (i = 0 ; i <= n ; i++)
+	for ( ; i <= n ; i++)
 	{
 		u[i] = str[i];
 	}
