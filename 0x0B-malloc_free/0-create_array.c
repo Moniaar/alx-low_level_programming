@@ -7,7 +7,7 @@
  *
  * @c: input char
  *
- * @n: unsigned int
+ * @size: input
  *
  * Return: a pointer to the array, or NULL if it fails
  */
