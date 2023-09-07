@@ -1,5 +1,5 @@
 #include "main.h"
-#include<stdlib>
+#include<stdlib.h>
 
 /**
  * _mems - a function to fill the array with 0 values
