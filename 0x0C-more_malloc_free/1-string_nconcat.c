@@ -21,9 +21,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int size1, size2, j, k;
 
 	if (s1 == NULL)
-		s1 = "\0";
+		s1 = " ";
 	if (s2 == NULL)
-		s2 = "\0";
+		s2 = " ";
 
 	for (size1 = 0 ; s1[size1] != '\0' ; size1++)
 		;
