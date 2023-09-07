@@ -19,7 +19,7 @@ char *_mems(char *s, char p, unsigned int n)
 
 	while (n--)
 		*s++ = b;
-	return (s);
+	return (sl);
 }
 
 /**
@@ -39,9 +39,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
-	m = malloc(sizeof(int) * nmemb)
-		if (m == 0)
-			return (NULL);
+	m = malloc(sizeof(int) * nmemb);
+
+	if (m == 0)
+		return (NULL);
 	_mems(c, 0, sizeof(int) * nmemb);
 
 	return (c);

@@ -1,4 +1,5 @@
-#include<stdio>
+#include<stdio.h>
+#include "main.h"
 
 /**
  * main - To infinity and beyond
@@ -10,7 +11,7 @@
  * Return: Always 0 (Success)
  */
 
-int main(int argc, char *argv[])
+int main(int argc, int *argv[])
 {
 	int s = 0;
 	char *c;
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 		for (c = argv[argc] ; *c ; c++)
 			if (*c < '0' || *c > '9')
 				return printf("Error\n");
-		s += atoi(argv[argc]);
+		s += (argv[argc]);
 	}
 	printf("%d\n", s);
 	return (0);
