@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 /**
- * _mems - a function to fill the array with 0 values
+ * *_mems - a function to fill the array with 0 values
  *
  * @s: pointer to constant
  *
@@ -23,7 +23,7 @@ char *_mems(char *s, char p, unsigned int n)
 }
 
 /**
- * _calloc - a function that allocates memory for an array, using malloc.
+ * *_calloc - a function that allocates memory for an array, using malloc.
  *
  * @nmemb: input
  *
@@ -39,9 +39,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
-	m = malloc(sizeof(int) * nmemb);
+	c = malloc(sizeof(int) * nmemb);
 
-	if (m == 0)
+	if (c == 0)
 		return (NULL);
 	_mems(c, 0, sizeof(int) * nmemb);
 
