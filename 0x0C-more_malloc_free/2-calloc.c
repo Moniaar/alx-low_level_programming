@@ -2,27 +2,6 @@
 #include<stdlib.h>
 
 /**
- * *_mems - a function to fill the array with 0 values
- *
- * @s: pointer to constant
- *
- * @p: constant
- *
- * @n: maximum bytes usage
- *
- * Return: poniter s
- */
-
-char *_mems(char *s, char p, unsigned int n)
-{
-	char *sl = s;
-
-	while (n--)
-		*s++ = b;
-	return (sl);
-}
-
-/**
  * *_calloc - a function that allocates memory for an array, using malloc.
  *
  * @nmemb: input
@@ -39,11 +18,13 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
-	c = malloc(sizeof(int) * nmemb);
+	c = malloc(sizeof * nmemb);
 
 	if (c == 0)
 		return (NULL);
-	*_mems(c, 0, sizeof(int) * nmemb);
+	nmemb *= size;
+	while (nmemb--)
+		c[nmemb] = 0;
 
 	return (c);
 }
