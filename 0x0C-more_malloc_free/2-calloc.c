@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 /**
- * *_calloc - a function that allocates memory for an array, using malloc.
+ * _calloc - a function that allocates memory for an array, using malloc.
  *
  * @nmemb: input
  *
@@ -14,11 +14,11 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *c;
+	char *c;
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
-	c = malloc(size * nmemb);
+	c = malloc(nmemb * size);
 
 	if (c == 0)
 		return (NULL);
