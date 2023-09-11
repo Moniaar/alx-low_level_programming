@@ -61,26 +61,30 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	dog1 = (dog_t *) malloc(sizeof(dog_t));
+
 	if (dog1 == NULL)
 		return (NULL);
 
 	dog1->name = malloc(sizeof(char) * (_stlr(name) + 1);
-			if ((*dog1).name == NULL)
-			{
-			free(dog1);
-			return (NULL);
-			}
 
-			dog1->owner = malloc(sizeof(char) * (_stlr(owner) + 1);
-				if ((*dog1).owner == NULL)
-				{
-				free(dog1->name);
-				free(dog1);
-				return (NULL);
-				}
-				dog1->name = _scop(dog1->name, name);
-				dog1->age = age;
-				dog1->owner = _scop(dog1->owner, owner);
+	if ((*dog1).name == NULL)
+	{
+		free(dog1);
+		return (NULL);
+	}
 
-				return (dog1);
-				}
+	dog1->owner = malloc(sizeof(char) * (_stlr(owner) + 1);
+
+	if ((*dog1).owner == NULL)
+	{
+		free(dog1->name);
+		free(dog1);
+		return (NULL);
+	}
+
+	dog1->name = _scop(dog1->name, name);
+	dog1->age = age;
+	dog1->owner = _scop(dog1->owner, owner);
+
+	return (dog1);
+}
