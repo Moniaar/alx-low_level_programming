@@ -55,17 +55,17 @@ char *_scop(char *dest, char *sc)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t dog1;
+	dog_t *dog1;
 
-	if (name == NULL || age < 0 || owner == NULL)
+	if (!name || age < 0 || !owner)
 		return (NULL);
 
-	dog1 = (dog_t *) malloc(sizeof(dog_t));
+	dog1 = (*dog_t) malloc(sizeof(dog_t));
 
 	if (dog1 == NULL)
 		return (NULL);
 
-	dog1->name = malloc(sizeof(char) * (_stlr(name) + 1);
+	dog1->name = malloc(sizeof(char) * (_stlr(name) + 1));
 
 	if ((*dog1).name == NULL)
 	{
@@ -73,7 +73,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	dog1->owner = malloc(sizeof(char) * (_stlr(owner) + 1);
+	dog1->owner = malloc(sizeof(char) * (_stlr(owner) + 1));
 
 	if ((*dog1).owner == NULL)
 	{
