@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <stdrag.h>
+#include <stdarg.h>
 
 /**
  * format_ch - formats characters
@@ -51,9 +51,9 @@ void format_f(char *separator, va_list argp)
 
 void format_s(char *separator, va_list argp)
 {
-	char *s = va_arg(ap, char *);
+	char *s = va_arg(argp, char *);
 
-	switch ((int)(!str))
+	switch ((int)(!s))
 		case 1:
 			s = "(nil)";
 
@@ -68,14 +68,14 @@ void format_s(char *separator, va_list argp)
 
 void prints_all(const char * const format, ...)
 {
-	int j;
+	int j = 0; k = 0;
 
-	j = 0;
 
-	int k;
-
-	char *separator = "";
 	va_list argp;
+
+	char *separator;
+
+	*separator = "";
 
 	token_t tokens[] = {
 		{"c", format_ch},
@@ -88,15 +88,14 @@ void prints_all(const char * const format, ...)
 	va_start(argp, format);
 	while (format && format[j])
 	{
-		k = 0;
 		while (tokens[k].token)
 		{
 			if (format[j] == tokens[k].token[0])
 			{
-				tokens[k].f(separator, ak);
+				tokens[k].f(separator, argp);
 				separator = ", ";
 			}
-			k++
+			k++;
 		}
 		j++;
 	}
