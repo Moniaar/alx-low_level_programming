@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /** list_len - calculate the length of a linked string
  *
@@ -9,13 +9,13 @@
 
 size_t list_len(const list_t *h)
 {
-	size_t k;
-	k = 0;
+	size_t p;
+	p = 0;
 
 	while (h)
 	{
 		h = h->next;
-		k++;
+		p++;
 	}
-	return (k);
+	return (p);
 }
