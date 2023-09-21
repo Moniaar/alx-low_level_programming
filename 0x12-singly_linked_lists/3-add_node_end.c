@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * add_node_end - add a new node at the end
@@ -12,20 +12,20 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *nnode = malloc(sizeof(list_l));
+	list_t *newnode = malloc(sizeof(list_t));
 	list_t *node = *head;
 
-	if (!head || !nnode)
+	if (!head || !newnode)
 		return (NULL);
 	if (str)
 	{
-		nnode->str = strdup(str);
-		if (!nnode->str)
+		newnode->str = strdup(str);
+		if (!newnode->str)
 		{
-			free(nnode);
+			free(newnode);
 			return (NULL);
 		}
-		nnode->len = _strl(nnode->str);
+		newnode->len = _strl(newnode->str);
 	}
 	if (node)
 	{
@@ -33,9 +33,9 @@ list_t *add_node_end(list_t **head, const char *str)
 		{
 			node = node->next;
 		}
-		node->next = nnode;
+		node->next = newnode;
 	}
 	else
-		*head = nnode;
-	return (nnode);
+		*head = newnode;
+	return (newnode);
 }
