@@ -7,5 +7,5 @@ main:
 	mov		ex, 0
 	call	printf
 
-section
+section		.data
 	msg db 'Hello, Holberton', 0xa, 0

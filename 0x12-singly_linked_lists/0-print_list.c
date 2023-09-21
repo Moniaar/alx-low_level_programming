@@ -8,14 +8,14 @@
  * Return: int length of the string itself
  */
 
-int _strl(char *str)
+int _strl(char *strl)
 {
 	int p;
 	p = 0;
 
-	if (!str)
+	if (!strl)
 		return (0);
-	while (*str++)
+	while (*strl++)
 		p++;
 	return (p);
 }
