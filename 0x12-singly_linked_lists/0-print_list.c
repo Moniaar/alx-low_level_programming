@@ -5,19 +5,19 @@
 /**
  * _strl - return the length of a given string from user
  *
- * @s: string whose length is meant to be checked
+ * @string: string whose length is meant to be checked
  *
  * Return: int length of the string itself
  */
 
-int _strl(char *strl)
+int _strl(char *string)
 {
 	int p;
 	p = 0;
 
-	if (!strl)
+	if (!string)
 		return (0);
-	while (*strl++)
+	while (*string++)
 		p++;
 	return (p);
 }
@@ -31,14 +31,14 @@ int _strl(char *strl)
 
 size_t print_list(const list_t *h)
 {
-	size_t k;
-	k = 0;
+	size_t p;
+	p = 0;
 
 	while (h)
 	{
 		printf("[%d] %s\n", _strl(h->str), h->str ? h->str : "(nil)");
 		h = h->next;
-		k++;
+		p++;
 	}
-	return (k);
+	return (p);
 }
