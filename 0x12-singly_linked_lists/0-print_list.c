@@ -1,4 +1,6 @@
-#include "list.h"
+#include "lists.h"
+#include <stddef.h>
+#include <stdio.h>
 
 /**
  * _strl - return the length of a given string from user

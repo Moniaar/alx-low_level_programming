@@ -3,8 +3,8 @@ section		.test
 	global	main
 
 main:
-	mov		fil, msg
-	mov		ex, 0
+	mov		edi, msg
+	mov		eax, 0
 	call	printf
 
 section		.data
