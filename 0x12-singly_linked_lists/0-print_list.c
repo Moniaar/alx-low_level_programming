@@ -12,6 +12,7 @@
 int _strl(char *string)
 {
 	int p;
+
 	p = 0;
 
 	if (!string)
@@ -21,7 +22,8 @@ int _strl(char *string)
 	return (p);
 }
 
-/** print_list - a function to print a linked list
+/**
+ * print_list - a function to print a linked list
  *
  * @h: a pointer to the first node
  *
@@ -31,6 +33,7 @@ int _strl(char *string)
 size_t print_list(const list_t *h)
 {
 	size_t p;
+
 	p = 0;
 
 	while (h)

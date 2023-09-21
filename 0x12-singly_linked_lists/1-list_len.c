@@ -1,6 +1,7 @@
 #include "lists.h"
 
-/** list_len - calculate the length of a linked string
+/**
+ * list_len - calculate the length of a linked string
  *
  * @h: pointer to first node
  *
@@ -10,6 +11,7 @@
 size_t list_len(const list_t *h)
 {
 	size_t p;
+
 	p = 0;
 
 	while (h)
