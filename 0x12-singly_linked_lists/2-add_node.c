@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * add_node - a function to insert a node if it's not there
@@ -11,21 +11,21 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *nhead = malloc(sizeof(list_t));
+	list_t *newhead = malloc(sizeof(list_t));
 
-	if (!head || !nhead)
+	if (!head || !newhead)
 		return (NULL);
 	if (str)
 	{
-		nhead->str = strdup(str);
-		if (!nhead_>)
+		newhead->str = strdup(str);
+		if (!newhead->str)
 		{
-			free(nhead);
+			free(newhead);
 			return (NULL);
 		}
-		nhead->len = _strl(nhead->str);
+		newhead->len = _strl(newhead->str);
 	}
-	nhead->next = *head;
-	*head = nhead;
-	return (nhead);
+	newhead->next = *head;
+	*head = newhead;
+	return (newhead);
 }
