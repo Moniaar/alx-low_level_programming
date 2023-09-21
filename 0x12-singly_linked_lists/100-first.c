@@ -1,9 +1,10 @@
-#include "list.h"
+#include "lists.h"
 #include <stdio.h>
 
 void _constructord(void) __attribute__ ((constructor));
 
-/** _constructord - execute the function before the main
+/**
+ * _constructord - execute the function before the main
  *
  * Return: nothing
  */
