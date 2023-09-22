@@ -18,7 +18,9 @@ int _strl(char *string)
 	if (!string)
 		return (0);
 	while (*string++)
+	{
 		p++;
+	}
 	return (p);
 }
 
