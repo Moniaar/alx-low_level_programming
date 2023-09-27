@@ -14,9 +14,13 @@
 int main(int argc, char *argv[])
 {
 	if (argc == 2)
-		int m, mincent;
-	money = atoi(argv[1]);
+	{
 	int cent[] = {25, 10, 5, 2, 1};
+	int m, mincent, money;
+
+	mincent = 0;
+
+	money = atoi(argv[1]);
 
 	for (m = 0; m < 5 ; m++)
 	{
@@ -31,6 +35,7 @@ int main(int argc, char *argv[])
 		}
 	}
 	printf("%d\n", mincent);
+	}
 	else
 	{
 		printf("Error\n");
