@@ -1,4 +1,3 @@
-#include "main.h"
 #include "dog.h"
 #include <stdlib.h>
 
@@ -12,7 +11,9 @@
 
 int _stlr(const char *s)
 {
-	int len = 0;
+	int len;
+
+	len = 0;
 
 	while (*s++)
 		len++;
@@ -60,7 +61,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (!name || age < 0 || !owner)
 		return (NULL);
 
-	dog1 = (*dog_t) malloc(sizeof(dog_t));
+	dog1 = (dog_t *) malloc(sizeof(dog_t));
 
 	if (dog1 == NULL)
 		return (NULL);
