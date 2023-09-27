@@ -12,15 +12,17 @@
  * Return: Always 0 (Success)
  */
 
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
-	int s = 0;
-	char *c;
+	int s;
+	char *cu;
+
+	s = 0;
 
 	while (--argc)
 	{
-		for (c = argv[argc] ; *c ; c++)
-			if (*c < '0' || *c > '9')
+		for (cu = argv[argc] ; *cu ; cu++)
+			if (*cu < '0' || *cu > '9')
 				return (printf("Error\n"), 1);
 		s += atoi(argv[argc]);
 	}
