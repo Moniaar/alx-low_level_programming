@@ -13,7 +13,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int folder;
+	int newfile;
 	ssize_t by;
 	char b[READ_BU_SIZE * 8];
 
@@ -22,11 +22,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	newfile = open(filename, O_RDONLY);
 
-	if (new file == -1)
+	if (newfile == -1)
 		return (0);
 
-	by = read(folder, &b[0], letters);
-	by = write(STDOUT_FILENO, &B[0], by);
-	close(folder);
+	by = read(newfile, &b[0], letters);
+	by = write(STDOUT_FILENO, &b[0], by);
+	close(newfile);
 	return (by);
 }
