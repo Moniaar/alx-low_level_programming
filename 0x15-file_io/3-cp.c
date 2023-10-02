@@ -4,9 +4,11 @@
 #define ERR_noread "Error: Can't read from file NAME_OF_THE_FILE %s\n"
 #define ERR_nowrite "Error: Can't write to NAME_OF_THE_FILE %s\n"
 #define ERR_noclose "Error: Can't close fd FD_VALUE %d\n"
-#define PERMMISION (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
+#define PERMISION (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
+
 /**
- * main - the main program to create copies the content of a file to another file.
+ * main - the main program to create copies the content
+ *of a file to another file.
  *
  * @ac: argument counter
  *
@@ -26,14 +28,14 @@ int main(int ac, char **av)
 
 	if (ac != 3)
 		dprintf(STDERR_FILENO, USE), exit(97);
-	nfile = open(aav[1], O_RDONLY);
+	nfile = open(av[1], O_RDONLY);
 
 	if (nfile == -1)
 		dprintf(STDERR_FILENO, ERR_noread, av[1]), exit(98);
 
-	ofile = open(av[2], O_WRONLY | O_TRUNC, PERMISSION);
+	ofile = open(av[2], O_WRONLY | O_TRUNC, PERMISION);
 	if (ofile == -1)
-		dprintf(STDERR_FILENO, ERR_nowrite, av[2], exit(99);
+		dprintf(STDERR_FILENO, ERR_nowrite, av[2]), exit(99);
 
 	while ((by = read(nfile, b, READ_BU_SIZE)) > 0)
 		if (write(nfile, b, by) != by)
