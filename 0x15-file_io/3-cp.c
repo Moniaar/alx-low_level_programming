@@ -38,7 +38,7 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, ERR_nowrite, av[2]), exit(99);
 
 	while ((by = read(nfile, b, READ_BU_SIZE)) > 0)
-		if (write(nfile, b, by) != by)
+		if (write(ofile, b, by) != by)
 			dprintf(STDERR_FILENO, ERR_nowrite, av[2]), exit(99);
 
 	if (by == -1)
