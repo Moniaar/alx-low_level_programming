@@ -33,13 +33,13 @@ int main(int ac, char **av)
 	if (nfile == -1)
 		dprintf(STDERR_FILENO, ERR_noread, av[1]), exit(98);
 
-	ofile = open(av[2], O_WRONLY | O_TRUNC, PERMISION);
+	ofile = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISION);
 	if (ofile == -1)
 		dprintf(STDERR_FILENO, ERR_nowrite, av[2]), exit(99);
 
 	while ((by = read(nfile, b, READ_BU_SIZE)) > 0)
 		if (write(nfile, b, by) != by)
-		dprintf(STDERR_FILENO, ERR_nowrite, av[2]), exit(99);
+			dprintf(STDERR_FILENO, ERR_nowrite, av[2]), exit(99);
 
 	if (by == -1)
 		dprintf(STDERR_FILENO, ERR_noread, av[1]), exit(98);
