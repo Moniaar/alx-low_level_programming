@@ -1,7 +1,8 @@
 #include "lists.h"
 
 /**
- * insert_dnodeint_at_index - a function that inserts a new node at a given position
+ * insert_dnodeint_at_index - a function that inserts
+ * a new node at a given position
  *
  * @idx: The postion to the new node insertion
  *
