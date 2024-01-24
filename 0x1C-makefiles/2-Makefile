@@ -1,14 +1,8 @@
-#  first useful Makefile
-
+# Using variables and going to next level
 CC = gcc
-SRC = school.c
+SRC = school.c main.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 
-all: $(NAME)
-
-$(NAME): $(OBJ)
-	$(CC) -o $@ $^
-
-%.o: %.c
-	$(CC) -c -o $@ $<
+all: $(OBJ)
+	$(CC) $(SRC) -o $(NAME)
