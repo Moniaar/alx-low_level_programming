@@ -1,0 +1,10 @@
+#This is my first ever MakeFile YAY!
+CC = gcc
+school: main.c school.c
+
+SRC = *.c
+
+all: school
+
+school:
+	$(SRC) -Wall -Wextra -std=c99 $(CC) -o school
