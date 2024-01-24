@@ -1,10 +1,7 @@
-#This is my first ever MakeFile YAY!
-CC = gcc
-school: main.c school.c
+school: school.c main.c
 
-SRC = *.c
+CC = gcc
+SRC = school.c
 
 all: school
-
-school:
-	$(SRC) -Wall -Wextra -std=c99 $(CC) -o school
+	$(SRC) $(CC) -o $@ $^
