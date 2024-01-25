@@ -1,5 +1,6 @@
-# Using variables and going to next level to remove and control files in your editor
-# Used PHONEY HERE without the %.o: %.c rule and omitted the .h file
+# Using variables and going to the next level to remove and control files in your editor
+# Used PHONY HERE without the %.o: %.c rule and omitted the .h file
+
 CC = gcc
 SRC = school.c main.c
 OBJ = $(SRC:.c=.o)
@@ -7,15 +8,19 @@ NAME = school
 RM = rm -f
 
 CFLAGS = -Wall -Werror -Wextra -pedantic
+
 .PHONY: all clean oclean fclean re
 
 all: $(OBJ) m.h
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) *~ $(NAME)
+	$(RM) *~ $(OBJ) $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
-fclean: clean oclean
-re:oclean all
+
+fclean: clean
+	$(RM) $(NAME)
+
+re: oclean all
