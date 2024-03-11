@@ -7,25 +7,27 @@
  * @array: the array to be sorted
  *
  * size: the size of the given array
- * 
+ *
  * value: the value we are searching for inside the array
 /
 
-int binary_serach(int *array, size_t size, int value)
+int binary_search(int *array, size_t size, int value)
 {
-	int start, end;
-	start = 0;
-	end = size - 1;
 
-	while (start <= end)
-	{
-		mid = (start + end) / 2;
-		if (value == array[mid])
-			return mid;
-		else if (value < array[mid])
-			end = mid - 1;
-		else
-			start = mid + 1;
-	}
-	return (-1);
+    int start, end, mid;
+    start = 0;
+    end = size - 1;
+
+    while (start <= end)
+    {
+
+        mid = (start + end) / 2;
+        if (value == array[mid])
+            return mid;
+        else if (value < array[mid])
+            end = mid - 1;
+        else
+            start = mid + 1;
+    }
+    return -1;
 }
