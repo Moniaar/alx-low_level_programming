@@ -4,7 +4,7 @@
  * linear_search - a function that searches for a value
  * 10 in an array of integers using the Linear search algorithm
  *
- * array: the array the searching algorithm will work on
+ * @array: the array the searching algorithm will work on
  *
  * size: the size of the given array
  *
