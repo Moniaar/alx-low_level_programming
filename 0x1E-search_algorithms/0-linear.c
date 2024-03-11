@@ -10,20 +10,22 @@
  *
  * value: the value we are searching for inside the array
  *
-/
+ /
 
 int linear_search(int *array, size_t size, int value)
 {
-	int POST;
-	POST = 0;
 
-	for (POST = 0; POST < size; POST++)
-	{
-		print ("Value checked array[%d] = [%d]", array[POST], value);
-		if (array[POST] == value)
-			return (POST);
-			print("Found %d at index: %d", value, POST);
-		else
-			return (-1);
-	}
+    int POST;
+
+    for (POST = 0; POST < size; POST++)
+        {
+
+                printf("Value checked array[%d] = [%d]\n", POST, array[POST]);
+        if (array[POST] == value)
+                {
+
+                        return POST;
+        }
+    }
+        return -1;
 }
